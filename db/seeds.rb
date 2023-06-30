@@ -10,8 +10,9 @@ require 'faker'
 
 10.times do
   Character.create(
-    name: Faker::Name.name,
-    location: Faker::Address.city,
-    house: Faker::HarryPotter.house
+    name: Faker::Movies::HarryPotter.character,
+    location: Faker::Movies::HarryPotter.location,
+    house: Faker::Movies::HarryPotter.house
   )
 end
+
